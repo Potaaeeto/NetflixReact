@@ -1,0 +1,16 @@
+* {
+  box-sizing: border-box;
+}
+
+.netflix {
+  background-color: black;
+}
+
+.netflixLogo {
+  height: 100px;
+  margin-left: 50px;
+}
+
+.title {
+  color: white;
+}
