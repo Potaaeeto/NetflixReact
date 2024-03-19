@@ -3,8 +3,8 @@ const Section = (props) => {
     <div>
       <p className="title">{props.title}</p>
       <div className="movies">
-        {elem.images.map((moviePoster) => {
-          return <img src={props.image} alt="moviesPoster" />;
+        {props.image.map((moviePoster) => {
+          return <img key={moviePoster} src={moviePoster} alt="moviesPoster" />;
         })}
       </div>
     </div>

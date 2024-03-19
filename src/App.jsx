@@ -22,7 +22,11 @@ function App() {
           {moviesJson.map((elem) => {
             // console.log(elem);
             return (
-              <Section title={elem.category} image={moviePoster} />
+              <Section
+                key={elem.category}
+                title={elem.category}
+                image={elem.images}
+              />
               // <div>
               //   <p className="title">{elem.category}</p>
               //   <div className="movies">
