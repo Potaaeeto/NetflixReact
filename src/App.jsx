@@ -5,6 +5,8 @@ import netflixLogo from "./assets/imgs/netflix-logo.png";
 
 import moviesJson from "./assets/movies_rnexgr.json";
 
+import Section from "./assets/components/Section";
+
 function App() {
   // console.log(Movies);
   return (
@@ -20,14 +22,15 @@ function App() {
           {moviesJson.map((elem) => {
             // console.log(elem);
             return (
-              <div>
-                <p className="title">{elem.category}</p>
-                <div className="movies">
-                  {elem.images.map((moviePoster) => {
-                    return <img src={moviePoster} alt="moviesPoster" />;
-                  })}
-                </div>
-              </div>
+              <Section title={elem.category} image={moviePoster} />
+              // <div>
+              //   <p className="title">{elem.category}</p>
+              //   <div className="movies">
+              //     {elem.images.map((moviePoster) => {
+              //       return <img src={moviePoster} alt="moviesPoster" />;
+              //     })}
+              //   </div>
+              // </div>
             );
           })}
         </div>
