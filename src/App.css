@@ -1,5 +1,12 @@
 * {
   box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+/* POUR MASQUER LA SCROLLBAR */
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
 }
 
 .netflix {
@@ -11,6 +18,28 @@
   margin-left: 50px;
 }
 
+.scrollbar {
+  margin-left: 50px;
+  padding-bottom: 40px;
+}
+
 .title {
   color: white;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.movies {
+  /* border: 2px solid red; */
+  display: flex;
+  overflow-x: scroll;
+  height: 150px;
+  margin-bottom: 40px;
+}
+
+.movies img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }

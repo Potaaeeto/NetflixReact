@@ -18,12 +18,13 @@ function App() {
           })} */}
 
           {moviesJson.map((elem) => {
+            // console.log(elem);
             return (
               <div>
-                <p className="title">Je suis {elem.category}</p>
+                <p className="title">{elem.category}</p>
                 <div className="movies">
-                  {moviesJson.map((moviePoster) => {
-                    return <img src={moviePoster.images} alt="moviesPoster" />;
+                  {elem.images.map((moviePoster) => {
+                    return <img src={moviePoster} alt="moviesPoster" />;
                   })}
                 </div>
               </div>
