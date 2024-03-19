@@ -12,15 +12,23 @@ function App() {
       <div className="netflix">
         <img className="netflixLogo" src={netflixLogo} alt="Netflix logo" />
         <div className="scrollbar">
-          {moviesJson.map((elem) => {
+          {/* {moviesJson.map((elem) => {
+            // console.log(elem.category); affiche les titres de chaque categories
             return <p className="title"> Je suis {elem.category}</p>;
+          })} */}
+
+          {moviesJson.map((elem) => {
+            return (
+              <div>
+                <p className="title">Je suis {elem.category}</p>
+                <div className="movies">
+                  {moviesJson.map((moviePoster) => {
+                    return <img src={moviePoster.images} alt="moviesPoster" />;
+                  })}
+                </div>
+              </div>
+            );
           })}
-          <div className="movies">
-            {moviesJson.map((elem) => {
-              return <img src={elem.images} alt="moviesPoster" />;
-            })}
-          </div>
-          ;
         </div>
       </div>
     </>
