@@ -1,14 +1,14 @@
 # Netflix React - Frontend Clone 🔴
 
-As part of my training at [Le Reacteur](https://www.lereacteur.io/) to become a full-stack developer, we were tasked with recreating a simple page of [Netflix](https://www.netflix.com/fr/) website, using the .json file given by the bootcamp.
+As part of my training at [Le Reacteur](https://www.lereacteur.io/) to become a full-stack developer, we were tasked with recreating a simple [Netflix](https://www.netflix.com/fr/) website, using the .json file given by the bootcamp.
 
-_This website is just an exercice and will not be deployed or used, beside as a portfolio piece. All the images used are not my property._
+_This website is just an exercise and will not be deployed or used, besides as a portfolio piece. All the images and links used are not my property._
 
 ## Overview 🚀
 
-Check the live demo [here](https://potaaeeto.github.io/NetflixReact/) and test it! 😊
+Check out the live demo [here](https://potaaeeto.github.io/NetflixReact/) and test it! 😊
 
-It is built mainly using ReactJS and CSS.
+It is mainly built using ReactJS and CSS.
 
 <img src="./src/assets/imgs/desktop.png" alt="desktop netflix react page" width="500"/>
 
@@ -16,7 +16,7 @@ It is built mainly using ReactJS and CSS.
 
 ✓ Creation of components
 
-✓ Used of .json file
+✓ Use of .json file
 
 ✓ Implementing integration (CSS and ReactJS)
 
